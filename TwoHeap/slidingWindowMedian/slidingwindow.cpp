@@ -51,8 +51,8 @@ void insert(int x)
         minheap.pop();
         maxheap.push(x);
     }
-
 }
+
 
 void remove(int x){
     if( maxheap.size() == minheap.size() && minheap.size() ==0)
