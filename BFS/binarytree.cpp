@@ -9,6 +9,7 @@ class TreeNode{
         TreeNode* left;
         TreeNode* right;
         TreeNode* next;
+        int level;
         public: TreeNode(int data):data(data),
                                     left(nullptr),
                                     right(nullptr),
@@ -17,9 +18,11 @@ class TreeNode{
         TreeNode* getLeft(){return left;}
         TreeNode* getRight(){return right;}
         TreeNode* getNext(){return next;}
+        int getLevel(){return level;}
         void setLeft(TreeNode* node){ left = node;}
         void setRight(TreeNode* node){ right = node;}
         void setNext(TreeNode* node){ next = node;}
+        void setlevel(int x){ level =x;}
 
     };
 
