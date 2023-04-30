@@ -8,14 +8,19 @@ class TreeNode{
         int data;
         TreeNode* left;
         TreeNode* right;
+        TreeNode* next;
         public: TreeNode(int data):data(data),
                                     left(nullptr),
-                                    right(nullptr){}
+                                    right(nullptr),
+                                    next(nullptr){}
         int getData(){return data;}
         TreeNode* getLeft(){return left;}
         TreeNode* getRight(){return right;}
+        TreeNode* getNext(){return next;}
         void setLeft(TreeNode* node){ left = node;}
         void setRight(TreeNode* node){ right = node;}
+        void setNext(TreeNode* node){ next = node;}
+
     };
 
 class BinaryTree{
